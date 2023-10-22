@@ -1,0 +1,12 @@
+{
+  "boundaryError": "Oops. Something went wrong",
+  "filterError": "Minimum 3 letters required",
+  "filterPlaceholder": "Search for a product",
+  "categoryLabel": "Category",
+  "categoryNoneOption": "None",
+  "productsFilterResult": "Sorry, there's nothing found!",
+  "productsElementPrice": "Price",
+  "productsElementCategory": "Category",
+  "goBackProductBtn": "Go Back",
+  "onProductImgHoverText": "Look on Amazon"
+}

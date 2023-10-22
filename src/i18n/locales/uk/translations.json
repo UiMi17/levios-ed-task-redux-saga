@@ -1,0 +1,12 @@
+{
+  "boundaryError": "Упс. Щось пішло не так. :)",
+  "filterError": "Введіть мінімум 3 літери",
+  "filterPlaceholder": "Знайдіть ваш продукт",
+  "categoryLabel": "Категорія",
+  "categoryNoneOption": "Не обрано",
+  "productsFilterResult": "Нічого не знайдено.",
+  "productsElementPrice": "Ціна",
+  "productsElementCategory": "Категорія",
+  "goBackProductBtn": "Назад",
+  "onProductImgHoverText": "Переглянути на Amazon"
+}
