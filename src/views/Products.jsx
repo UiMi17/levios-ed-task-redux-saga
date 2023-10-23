@@ -6,11 +6,10 @@ import Filter from "../components/Filter/Filter";
 import ErrorBoundary from "../highOrderedComponents/ErrorBoundary";
 import {useDispatch, useSelector} from "react-redux";
 import {selectProducts} from "../redux/selectors";
-import {fetchProductsThunk} from "../redux/operations";
 
 const Products = () => {
     const dispatch = useDispatch()
-    const products = useSelector(selectProducts);
+    const products = useSelector(selectProducts) || [];
     const [filter, setFilter] = useState("");
     const debouncedFilter = useDebounce(filter, 700);
     const [selectedCategory, setSelectedCategory] = useState("none");
@@ -20,8 +19,9 @@ const Products = () => {
     ];
 
     useEffect(() => {
-        dispatch(fetchProductsThunk());
+        dispatch({type: "WATCH_PRODUCTS_FETCH"});
     }, [dispatch]);
+
 
     const handleFilterInputChange = useCallback((value) => {
         setFilter(value);
